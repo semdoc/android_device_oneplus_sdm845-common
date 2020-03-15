@@ -23,56 +23,60 @@
         android:defaultValue="true" />
 
     <PreferenceCategory
-        android:title="@string/offscreen_gesture_title">
+        android:title="@string/gesture_display_title">
 
         <com.aicp.device.AppSelectListPreference
             android:key="circle_gesture_app"
-            android:title="@string/category_circle_gesture"
+            android:title="@string/touchscreen_flashlight_gesture_title"
+            android:summary="@string/touchscreen_flashlight_gesture_summary"
             android:persistent="false" />
 
         <com.aicp.device.AppSelectListPreference
             android:key="double_swipe_gesture_app"
-            android:title="@string/category_double_swipe_gesture"
+            android:title="@string/touchscreen_music_gesture_title"
+            android:summary="@string/touchscreen_music_gesture_summary"
             android:persistent="false" />
 
         <com.aicp.device.AppSelectListPreference
             android:key="left_arrow_gesture_app"
-            android:title="@string/category_left_arrow_gesture"
+            android:title="@stringtouchscreen_left_arrow_gesture_title"
             android:persistent="false"/>
 
         <com.aicp.device.AppSelectListPreference
             android:key="right_arrow_gesture_app"
-            android:title="@string/category_right_arrow_gesture"
+            android:title="@string/touchscreen_right_arrow_gesture_title"
             android:persistent="false"/>
 
         <com.aicp.device.AppSelectListPreference
             android:key="up_arrow_gesture_app"
-            android:title="@string/category_up_arrow_gesture"
+            android:title="@string/touchscreen_up_arrow_gesture_title"
+            android:summary="@string/touchscreen_up_arrow_gesture_summary"
             android:persistent="false" />
 
         <com.aicp.device.AppSelectListPreference
             android:key="down_arrow_gesture_app"
-            android:title="@string/category_down_arrow_gesture"
+            android:title="@string/touchscreen_v_gesture_title"
+            android:summary="@string/touchscreen_v_gesture_summary"
             android:persistent="false"/>
 
         <com.aicp.device.AppSelectListPreference
             android:key="down_swipe_gesture_app"
-            android:title="@string/category_down_swipe_gesture"
+            android:title="@string/touchscreen_swipe_down_title"
             android:persistent="false"/>
 
         <com.aicp.device.AppSelectListPreference
             android:key="up_swipe_gesture_app"
-            android:title="@string/category_up_swipe_gesture"
+            android:title="@string/touchscreen_swipe_up_title"
             android:persistent="false"/>
 
         <com.aicp.device.AppSelectListPreference
             android:key="left_swipe_gesture_app"
-            android:title="@string/category_left_swipe_gesture"
+            android:title="@string/touchscreen_swipe_left_title"
             android:persistent="false"/>
 
         <com.aicp.device.AppSelectListPreference
             android:key="right_swipe_gesture_app"
-            android:title="@string/category_right_swipe_gesture"
+            android:title="@string/touchscreen_swipe_right_title"
             android:persistent="false"/>
 
     </PreferenceCategory>

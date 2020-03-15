@@ -49,7 +49,7 @@
         <activity
             android:name="com.aicp.device.GestureSettingsActivity"
             android:exported="false"
-            android:label="@string/category_gestures_title"
+            android:label="@string/screen_gestures_panel_title"
             android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -16,8 +16,8 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <Preference
         android:key="gesture_category"
-        android:title="@string/category_gestures_title"
-        android:summary="@string/category_gestures_summary"
+        android:title="@string/touchscreen_gesture_settings_title"
+        android:summary="@string/touchscreen_gesture_settings_summary"
         android:persistent="false" >
         <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.aicp.device"
@@ -54,24 +54,26 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/category_slider">
+        android:title="@string/notification_slider_category_title"
+        android:summary="@string/notification_slider_selection_dialog_title">
+
         <ListPreference
-            android:key="slider_mode_top"
-            android:title="@string/slider_mode_title_top"
-            android:entries="@array/slider_key_action_entries"
-            android:entryValues="@array/slider_key_action_values"
+            android:key="notification_slider_mode_top"
+            android:title="@string/notification_slider_top_position"
+            android:entries="@array/notification_slider_key_action_entries"
+            android:entryValues="@array/notification_slider_key_action_values"
             android:persistent="false" />
         <ListPreference
-            android:key="slider_mode_center"
-            android:title="@string/slider_mode_title_center"
-            android:entries="@array/slider_key_action_entries"
-            android:entryValues="@array/slider_key_action_values"
+            android:key="notification_slider_mode_center"
+            android:title="@string/notification_slider_middle_position"
+            android:entries="@array/notification_slider_key_action_entries"
+            android:entryValues="@array/notification_slider_key_action_values"
             android:persistent="false" />
         <ListPreference
-            android:key="slider_mode_bottom"
-            android:title="@string/slider_mode_title_bottom"
-            android:entries="@array/slider_key_action_entries"
-            android:entryValues="@array/slider_key_action_values"
+            android:key="notification_slider_mode_bottom"
+            android:title="@string/notification_slider_bottom_position"
+            android:entries="@array/notification_slider_key_action_entries"
+            android:entryValues="@array/notification_slider_key_action_values"
             android:persistent="false" />
     </PreferenceCategory>
 
@@ -86,12 +88,12 @@
     </PreferenceCategory>
 -->
     <PreferenceCategory
-        android:key="graphics"
-        android:title="@string/graphics_title">
+        android:key="display_modes"
+        android:title="@string/display_title">
         <SwitchPreference
             android:key="dcd"
-            android:summary="@string/dcd_mode_summary"
-            android:title="@string/dcd_mode_title" />
+            android:summary="@string/dc_mode_summary"
+            android:title="@string/dc_mode_title" />
         <SwitchPreference
             android:key="hbm"
             android:summary="@string/hbm_mode_summary"
