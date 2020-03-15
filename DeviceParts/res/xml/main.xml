@@ -23,7 +23,7 @@
                 android:targetPackage="com.aicp.device"
                 android:targetClass="com.aicp.device.GestureSettingsActivity" />
     </Preference>
-
+<!--
     <Preference
         android:key="doze_category"
         android:title="@string/doze_category_title"
@@ -33,23 +33,23 @@
                 android:targetPackage="org.lineageos.settings.doze"
                 android:targetClass="org.lineageos.settings.doze.DozeSettingsActivity" />
     </Preference>
-
+-->
     <PreferenceCategory
         android:title="@string/category_vibrator">
-        <com.aicp.device.VibratorSystemStrengthPreference
-            android:key="vib_system_strength"
-            android:title="@string/vib_system_strength_title_head"
-            android:summary="@string/vib_system_strength_summary_head"
+        <com.aicp.device.VibratorNotifStrengthPreference
+            android:key="vib_notif_strength"
+            android:title="@string/vib_notif_strength_title_head"
+            android:summary="@string/vib_notif_strength_summary_head"
             android:persistent="false" />
         <com.aicp.device.VibratorCallStrengthPreference
             android:key="vib_call_strength"
             android:title="@string/vib_call_strength_title_head"
             android:summary="@string/vib_call_strength_summary_head"
             android:persistent="false" />
-        <com.aicp.device.VibratorNotifStrengthPreference
-            android:key="vib_notif_strength"
-            android:title="@string/vib_notif_strength_title_head"
-            android:summary="@string/vib_notif_strength_summary_head"
+        <com.aicp.device.VibratorSystemStrengthPreference
+            android:key="vib_system_strength"
+            android:title="@string/vib_system_strength_title_head"
+            android:summary="@string/vib_system_strength_summary_head"
             android:persistent="false" />
     </PreferenceCategory>
 
