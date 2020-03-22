@@ -227,7 +227,7 @@ public class AppSelectListPreference extends CustomDialogPreference {
                 R.drawable.ic_music_play, MUSIC_PLAY_ENTRY);
         mInstalledPackages.add(0, musicPlayItem);
 
-	PackageItem ambientDisplay = new PackageItem(getContext().getResources().getString(R.string.ambient_display_entry),
+        PackageItem ambientDisplay = new PackageItem(getContext().getResources().getString(R.string.ambient_display_entry),
                 R.drawable.ic_ambient_display, AMBIENT_DISPLAY_ENTRY);
         mInstalledPackages.add(0, ambientDisplay);
 

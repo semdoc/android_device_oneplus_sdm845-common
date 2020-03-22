@@ -113,6 +113,11 @@ public class Startup extends BroadcastReceiver {
         enabled = !value.equals(AppSelectListPreference.DISABLED_ENTRY);
         restore(getGestureFile(GestureSettings.KEY_DOWN_ARROW_APP), enabled);
 
+        // M Gesture
+        value = Settings.System.getString(context.getContentResolver(), GestureSettings.DEVICE_GESTURE_MAPPING_3);
+        enabled = !TextUtils.isEmpty(value) && !value.equals(AppSelectListPreference.DISABLED_ENTRY);
+        restore(getGestureFile(GestureSettings.KEY_M_GESTURE_APP), enabled);
+
         // left arrow -> music prev
         mapping = GestureSettings.DEVICE_GESTURE_MAPPING_4;
         value = Settings.System.getString(context.getContentResolver(), mapping);
@@ -152,6 +157,16 @@ public class Startup extends BroadcastReceiver {
         value = Settings.System.getString(context.getContentResolver(), GestureSettings.DEVICE_GESTURE_MAPPING_9);
         enabled = !TextUtils.isEmpty(value) && !value.equals(AppSelectListPreference.DISABLED_ENTRY);
         restore(getGestureFile(GestureSettings.KEY_RIGHT_SWIPE_APP), enabled);
+
+        // S Gesture
+        value = Settings.System.getString(context.getContentResolver(), GestureSettings.DEVICE_GESTURE_MAPPING_10);
+        enabled = !TextUtils.isEmpty(value) && !value.equals(AppSelectListPreference.DISABLED_ENTRY);
+        restore(getGestureFile(GestureSettings.KEY_S_GESTURE_APP), enabled);
+
+        // W Gesture
+        value = Settings.System.getString(context.getContentResolver(), GestureSettings.DEVICE_GESTURE_MAPPING_11);
+        enabled = !TextUtils.isEmpty(value) && !value.equals(AppSelectListPreference.DISABLED_ENTRY);
+        restore(getGestureFile(GestureSettings.KEY_W_GESTURE_APP), enabled);
 
         enabled = Settings.System.getInt(context.getContentResolver(), SRGBModeSwitch.SETTINGS_KEY, 0) != 0;
         restore(SRGBModeSwitch.getFile(), enabled);

@@ -89,6 +89,9 @@ public class KeyHandler implements DeviceKeyHandler {
     public static final String EXTRA_SLIDER_POSITION = "position";
     public static final String EXTRA_SLIDER_POSITION_VALUE = "position_value";
 
+    private static final int GESTURE_W_SCANCODE = 246;
+    private static final int GESTURE_M_SCANCODE = 247;
+    private static final int GESTURE_S_SCANCODE = 248;
     private static final int GESTURE_CIRCLE_SCANCODE = 250;
     private static final int GESTURE_V_SCANCODE = 252;
     private static final int GESTURE_II_SCANCODE = 251;
@@ -129,6 +132,9 @@ public class KeyHandler implements DeviceKeyHandler {
         GESTURE_II_SCANCODE,
         GESTURE_CIRCLE_SCANCODE,
         GESTURE_V_SCANCODE,
+        GESTURE_M_SCANCODE,
+        GESTURE_S_SCANCODE,
+        GESTURE_W_SCANCODE,
         GESTURE_LEFT_V_SCANCODE,
         GESTURE_RIGHT_V_SCANCODE,
         GESTURE_DOWN_SWIPE_SCANCODE,
@@ -145,6 +151,9 @@ public class KeyHandler implements DeviceKeyHandler {
         GESTURE_II_SCANCODE,
         GESTURE_CIRCLE_SCANCODE,
         GESTURE_V_SCANCODE,
+        GESTURE_M_SCANCODE,
+        GESTURE_S_SCANCODE,
+        GESTURE_W_SCANCODE,
         GESTURE_LEFT_V_SCANCODE,
         GESTURE_RIGHT_V_SCANCODE,
         GESTURE_DOWN_SWIPE_SCANCODE,
@@ -589,6 +598,9 @@ public class KeyHandler implements DeviceKeyHandler {
             case GESTURE_V_SCANCODE:
                 return Settings.System.getStringForUser(mContext.getContentResolver(),
                     GestureSettings.DEVICE_GESTURE_MAPPING_2, UserHandle.USER_CURRENT);
+            case GESTURE_M_SCANCODE:
+                return Settings.System.getStringForUser(mContext.getContentResolver(),
+                    GestureSettings.DEVICE_GESTURE_MAPPING_3, UserHandle.USER_CURRENT);
             case GESTURE_LEFT_V_SCANCODE:
                 return Settings.System.getStringForUser(mContext.getContentResolver(),
                     GestureSettings.DEVICE_GESTURE_MAPPING_4, UserHandle.USER_CURRENT);
@@ -607,6 +619,12 @@ public class KeyHandler implements DeviceKeyHandler {
             case GESTURE_RIGHT_SWIPE_SCANCODE:
                 return Settings.System.getStringForUser(mContext.getContentResolver(),
                     GestureSettings.DEVICE_GESTURE_MAPPING_9, UserHandle.USER_CURRENT);
+            case GESTURE_S_SCANCODE:
+                return Settings.System.getStringForUser(mContext.getContentResolver(),
+                    GestureSettings.DEVICE_GESTURE_MAPPING_10, UserHandle.USER_CURRENT);
+            case GESTURE_W_SCANCODE:
+                return Settings.System.getStringForUser(mContext.getContentResolver(),
+                    GestureSettings.DEVICE_GESTURE_MAPPING_11, UserHandle.USER_CURRENT);
         }
         return null;
     }
