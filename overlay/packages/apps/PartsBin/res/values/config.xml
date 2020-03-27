@@ -16,7 +16,7 @@
 
 <!-- DeviceParts app resources that may need to be customized
      for different hardware or product builds. -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Path to devices High Brigness Mode toggle file -->
     <string name="pathHBMModeToggle">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm</string>
