@@ -1,8 +1,8 @@
 [
   {
-    "repository":  "AICP/kernel_oneplus_sdm845",
+    "repository":  "celtare21/aicp_kernel_oneplus_845",
     "target_path": "kernel/oneplus/sdm845",
-    "branch":      "q10.0"
+    "branch":      "ten"
   },
   {
     "repository":  "AICP/proprietary_vendor_oneplus",
