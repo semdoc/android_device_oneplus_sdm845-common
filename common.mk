@@ -110,9 +110,14 @@ PRODUCT_PACKAGES += \
     libvulkan \
     vendor.display.config@1.0
 
+
 # Doze
 PRODUCT_PACKAGES += \
     OnePlusDoze
+
+# DPM
+PRODUCT_PACKAGES += \
+    libshim_dpmframework
 
 # HIDL
 PRODUCT_PACKAGES += \
