@@ -1,0 +1,12 @@
+[
+  {
+    "repository":  "LineageOS/android_kernel_oneplus_sdm845",
+    "target_path": "kernel/oneplus/sdm845",
+    "branch":      "lineage-17.1"
+  },
+  {
+    "repository":  "TheMuppets/proprietary_vendor_oneplus",
+    "target_path": "vendor/oneplus",
+    "branch":      "lineage-18.0"
+  }
+]
