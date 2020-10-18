@@ -125,7 +125,7 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus_sdm845
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     lineage.livedisplay@2.0-service.oneplus_sdm845
 
 # Media
@@ -182,7 +182,7 @@ PRODUCT_PACKAGES += \
     tri-state-key_daemon
 
 # Trust HAL
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     lineage.trust@1.0-service
 
 # Update engine
