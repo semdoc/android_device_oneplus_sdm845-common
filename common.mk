@@ -20,6 +20,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
 
+# include oneplus settings repo
+$(call inherit-product, device/oneplus/settings/settings.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -102,8 +105,12 @@ PRODUCT_PACKAGES += \
     libvulkan \
     vendor.display.config@1.0
 
-# Doze
+# DeviceParts
 PRODUCT_PACKAGES += \
+    PartsBin
+
+# Doze
+#PRODUCT_PACKAGES += \
     OnePlusDoze
 
 # HIDL

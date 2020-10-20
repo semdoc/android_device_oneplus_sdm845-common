@@ -1,12 +1,27 @@
 [
   {
-    "repository":  "LineageOS/android_kernel_oneplus_sdm845",
+    "repository":  "AICP/kernel_oneplus_sdm845",
     "target_path": "kernel/oneplus/sdm845",
-    "branch":      "lineage-17.1"
+    "branch":      "q10.0"
   },
   {
     "repository":  "TheMuppets/proprietary_vendor_oneplus",
     "target_path": "vendor/oneplus",
     "branch":      "lineage-18.0"
+  },
+  {
+    "repository":  "AICP/packages_apps_PartsBin",
+    "target_path": "packages/apps/PartsBin",
+    "branch":      "r11.0"
+  },
+  {
+    "repository":  "AICP/device_oneplus_settings",
+    "target_path": "device/oneplus/settings",
+    "branch":      "r11.0"
+  },
+  {
+    "repository":  "AICP/packages_resources_deviceparts",
+    "target_path": "packages/resources/deviceparts",
+    "branch":      "r11.0"
   }
 ]
