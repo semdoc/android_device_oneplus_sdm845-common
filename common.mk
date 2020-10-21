@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
 
 # include oneplus settings repo
-$(call inherit-product, device/oneplus/settings/settings.mk)
+#$(call inherit-product, device/oneplus/settings/settings.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -109,6 +109,10 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libvulkan \
     vendor.display.config@1.0
+
+# Doze
+PRODUCT_PACKAGES += \
+    OnePlusDoze
 
 # HIDL
 PRODUCT_PACKAGES += \

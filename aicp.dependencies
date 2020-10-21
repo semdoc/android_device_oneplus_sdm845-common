@@ -15,11 +15,6 @@
     "branch":      "r11.0"
   },
   {
-    "repository":  "AICP/device_oneplus_settings",
-    "target_path": "device/oneplus/settings",
-    "branch":      "r11.0"
-  },
-  {
     "repository":  "AICP/packages_resources_deviceparts",
     "target_path": "packages/resources/deviceparts",
     "branch":      "r11.0"
