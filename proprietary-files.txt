@@ -1,5 +1,8 @@
 # All unpinned blobs below are extracted from OnePlus6Oxygen_22_OTA_042_all_1912142031_0fb330
 
+#Android Auto
+-product/priv-app/AndroidAutoStub/AndroidAutoStub.apk;PRESIGNED
+
 # ANT+
 -lib/libantradio.so
 -lib64/libantradio.so
